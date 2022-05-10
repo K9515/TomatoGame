@@ -1,7 +1,10 @@
 # rotten tomatoes game
 My rotten tomatoes game randomly chooses a movie from a CSV file I created and prompts the user to input their guess of the movie's rotten tomatoes score. The use is then told what the correct score is, as well as if they got any points for their guess. This happens three times for player 1 and then the final point total is given.
+
 Then, it is player 2's turn and they go through the exact same process as player 1. After their final point total is revealed the game tells the players who won or if they tied. 
+
 My code is structured as follows:
+
           definitions for turns and points
           main while loop containing the game
           while loop for when player1_turns == 0 and player2_turns == 3
@@ -13,6 +16,7 @@ My code is structured as follows:
           if/elif/else statements that assign different point totals depending on the difference
           if statement for player 2 turns being up that breaks out of main while loop
           last while loop that determines who won or if they tied
+          
 For an example game this is what the output should look like:
           !!Welcome to the Rotten Tomatoes Guessing Game!!
           This is a 2 player game.Each player has three turns. You will be given the name of a movie and must input a guess. The player with the most points wins.
@@ -45,6 +49,7 @@ For an example game this is what the output should look like:
           The correct answer was 50. Your guess was more than 10 off. You get 0 points.
           Player 2's total points: 1
           Player 2 wins with 1 point(s)! Player 1 had 0 point(s).
+          
  Some things I would do if I had more time are figure out how to include a movie poster along with the movie title, allow users to choose number of rounds and players, and use on a much bigger data set.
  
  Included in the files here are my final code (final.py), my process(step1.py through step5.py), and my dataset (data.csv)
