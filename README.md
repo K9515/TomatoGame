@@ -1,5 +1,49 @@
-# tabdeposit
-For my final project I have decided to create a tab manager. Every time when I show someone my computer they immediately mention the number of tabs I have open. Little do they know that the window they are looking at is just one of 15. I have at least 1,000 tabs open at any given time, which not only makes organization incredibly difficult, but also makes my computer run incredibly slow. I have tried every tab manager on the market, and none of them work with my brains organizational structure. See, I have ADHD, and that makes the way I categorize and organize information different from most people. I feel that if I close a tab I will lose that information forever, so I need to have a very organized and customizable tab manager that I can use to easily find what tab I am looking for. That is something I haven't yet been able to find.
-There are a few things I would like to create in this. First, I want to create folders for different types of tabs and then be able to easily put each new tab into a folder. I would like the tab organization to come up every time I open a new window on my computer. I would also like to be able to send large amounts of tabs to folders at once. If possible (like we talked about in class with searching), I would like to be able to search for tabs (through the title of the webpage). I would also like the icons and color to be customizable (if I have time to do this), as I'm someone who cares a lot about aesthetics. 
-Thinking about this through a computer standpoint, I currently envision it in a few stages. First when I click on the extension I will have options to send just that tab or tabs to the left/right/all tabs to my tab collector. Then the tab collector will take the URLs and put them in their respective folders (there will also be an option to create a new folder). What will appear in the folders is the page icon and the webpage title.
-I don't know how much of this is feasible in the next month, but this is something I genuinely need in my life so I plan on continuing to improve it after the semester ends. 
+# rotten tomatoes game
+After a meeting, I've decided to instead make a game based off of rotten tomatoes and my love for movies. It is a guessing game akin to the guess the number game in class, but with points assigned according to how close to the answer one guesses. 
+
+The goal by the end of this is to create a working prototype for a small dataset (like the small dataset from PSET 4 in class). 
+Here are my steps:
+1) first create a file of Movies and their corresponding rotten tomato scores. 10 or so movies should do so I can test my code throughout the process of creating.
+2) import the guessing the number code and edit to broadly represent what I want to do
+          here is the primary loop I am thinking of
+                  randomly select one movie
+                  ask user for a guess
+                  if the guess is within 10 -- 1 point
+                                          5 -- 5 points
+                                    correct -- 10 points
+                  add points to score
+                  tell user points gained
+         do this loop twice more
+         give user final point total
+         
+         do the exact same thing for player two
+         
+         determine which point total is bigger
+         tell user who won or if they tied
+         
+current code
+      define above the actual game
+            player1_turns = 3
+            player2_turns = 3
+            points = 0
+            player2_points= 0
+      what i currently have for the game
+      while True:
+            try:
+                guess = int(input('Please input your guess: '))
+                player1_turns -= 1
+                break
+            except ValueError:
+                print('Guesses must be an integer. Try again...')
+        difference = guess - (random movie score)
+        if difference in [x for x in range(-5,5) if x != 0]:
+            print(f"The correct answer was (random movie score). Your guess was within 5 integers so you get 5 points.")
+            points = points+5
+        elif difference in chain(range(-10, -6), range(6, 10)):
+            print(f"The correct answer was (random movie score). Your guess was within 10 integers so you get 1 point.")
+            points = points+1
+        elif difference == 0:
+            print('You guessed correctly! You get 10 points.')
+            points = points+10
+        else:
+            print(f"The correct answer was (random movie score). Your guess was within more than 10 off. You get 0 points.") 
