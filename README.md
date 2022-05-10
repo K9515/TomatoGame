@@ -34,7 +34,7 @@ For an example game this is what the output should look like:
           Please input your guess: 
           98
           The correct answer was 89. Your guess was within 10 integers so you get 1 point.
-          Player 1's total points: 0
+          Player 1's total points: 1
           It's player 2's Turn:
           The movie is Along for the Ride.
           Please input your guess: 
@@ -48,8 +48,8 @@ For an example game this is what the output should look like:
           Please input your guess: 
           98
           The correct answer was 50. Your guess was more than 10 off. You get 0 points.
-          Player 2's total points: 1
-          Player 2 wins with 1 point(s)! Player 1 had 0 point(s).
+          Player 2's total points: 0
+          Player 1 wins with 1 point(s)! Player 2 had 0 point(s).
           
  Some things I would do if I had more time are figure out how to include a movie poster along with the movie title, allow users to choose number of rounds and players, and use on a much bigger data set.
  
