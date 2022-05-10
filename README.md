@@ -18,6 +18,7 @@ My code is structured as follows:
           last while loop that determines who won or if they tied
           
 For an example game this is what the output should look like:
+
           !!Welcome to the Rotten Tomatoes Guessing Game!!
           This is a 2 player game.Each player has three turns. You will be given the name of a movie and must input a guess. The player with the most points wins.
           It's Player 1's Turn:
